@@ -10,10 +10,6 @@
     font-size: 125%;
 }
 
-.item.blue {
-    background-color: darkcyan;
-}
-
 .item.white {
     background-color: rgb(15,15,15);
     border-top: 1px solid white;
@@ -64,27 +60,10 @@
     columns: 2;
 }
 
-
 .Presentation {
     grid-area: presentation;
     display: block;
     border-right: 1px solid white;
-}
-
-
-@media (max-width: 667px) {
-    #PF {
-        grid-template-areas: "presentation  formation";
-        columns: 1;
-    }
-    .Presentation {
-        grid-area: presentation;
-        display: block;
-        border-bottom: 1px solid white;
-        border-right: none;
-    }
-
-
 }
 
 
@@ -149,10 +128,10 @@
     mix-blend-mode: difference;
 }
 
-.background_2 {
-    background-image: url(../img/space.jpg);
+.background{
     background-repeat: repeat;
     background-attachment: scroll;
+    background-position: center;
     background-size: auto;
     background-size: cover;
     background-repeat: no-repeat;
@@ -170,25 +149,13 @@
     z-index: 0;
 }
 
-.background_3 {
+.bg2 {
+    background-image: url(../img/space.jpg);
+    
+}
+
+.bg3 {
     background-image: url(../img/space_2.png);
-    background-repeat: repeat;
-    background-attachment: scroll;
-    background-size: auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    right: 0px;
-    left: 0px;
-    top: 0px;
-    height: 300px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-left: 0px;
-    z-index: 0;
 }
 
 .Projets
@@ -205,18 +172,10 @@
     overflow: auto;
 }
 
-#hive 
+#hive , #rover
 {
     height:250px;
 }
-
-#rover
-{
-    height:250px;
-}
-
-
-
 
 .container {
     width: 100%;
@@ -247,8 +206,28 @@
   .reseaux {width: 65%; background-color: cyan;}
   .unix {width: 85%; background-color: greenyellow;}
 
-  footer{
-      font-size: 18px;
-      text-align: center;
-      background-color: rgb(15, 15, 15);
-  }
+
+@media (max-width: 667px) {
+    #PF {
+        grid-template-areas: "presentation  formation";
+        columns: 1;
+    }
+    .Presentation {
+        grid-area: presentation;
+        display: block;
+        border-bottom: 1px solid white;
+        border-right: none;
+    }
+    .Projets{
+        columns: 1;
+       
+    }
+    .Projet:last-of-type{
+        border-top: 1px solid white;
+        border-right: none;
+    }
+    .Projet{
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+}
