@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.item {
+    padding: 10px 10px 10px 10px;
+    font-size: 125%;
+}
+
+.item.blue {
+    background-color: darkcyan;
+}
+
+.item.white {
+    background-color: rgb(15,15,15);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.item h1 {
+    text-align: center;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    padding-bottom: 20px;
+    overflow: auto;
+}
+
+.item p {
+    color: white;
+}
+
+.item a {
+    color: #3575be;
+    text-decoration: none;
+}
+
+.item.background {
+    background-image: url("../img/moon.jpg");
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-size: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0px;
+    z-index: 0;
+}
+
+#PF {
+    grid-template-areas: "presentation  formation";
+    columns: 2;
+}
+
+
+.Presentation {
+    grid-area: presentation;
+    display: block;
+    border-right: 1px solid white;
+}
+
+
+@media (max-width: 667px) {
+    #PF {
+        grid-template-areas: "presentation  formation";
+        columns: 1;
+    }
+    .Presentation {
+        grid-area: presentation;
+        display: block;
+        border-bottom: 1px solid white;
+        border-right: none;
+    }
+
+
+}
+
+
+#Presentation #Idphoto {
+    width: 33%;
+    height: 33%;
+    margin-left: 33%;
+    margin-right: 33%;
+    border-radius: 15px;
+    position: relative;
+}
+
+#Presentation h2 {
+    text-align: center;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 20px;
+    overflow: auto;
+}
+
+#Presentation #info p {
+    padding-bottom: 5px;
+    padding-left: 5px;
+    line-height: 150%;
+}
+
+.details img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+#info {
+    text-align: center;
+}
+
+.Formation {
+    text-align: center;
+    grid-area: formation;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.Formation p {
+    line-height: 150%;
+}
+
+.Formation h2 {
+    color: lawngreen;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 5px;
+}
+
+#Projet {
+    text-align: center;
+    grid-area: formation;
+    display: block;
+    margin-bottom: 15px;
+}
+
+#Projet a {
+    mix-blend-mode: difference;
+}
+
+.background_2 {
+    background-image: url(../img/space.jpg);
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-size: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0px;
+    z-index: 0;
+}
+
+.background_3 {
+    background-image: url(../img/space_2.png);
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-size: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0px;
+    z-index: 0;
+}
+
+.Projets
+{
+    columns: 2;
+}
+
+#Projet h2 {
+    text-align: center;
+    color: lawngreen;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 20px;
+    overflow: auto;
+}
+
+#hive 
+{
+    height:250px;
+}
+
+#rover
+{
+    height:250px;
+}
+
+
+
+
+.container {
+    width: 100%;
+    background-color: #7c7c7c;
+    border: 1px white solid;
+  }
+  
+  .skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+  }
+
+  .Skill{
+      columns: 2;
+      padding-bottom: 15px;
+  }
+  #Skills p {
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+  
+  .html {width: 80%; background-color: orangered;}
+  .js {width: 70%; background-color: goldenrod;}
+  .cpp {width: 100%; background-color: darkblue;}
+  .java {width: 75%; background-color: red;}
+  .reseaux {width: 65%; background-color: cyan;}
+  .unix {width: 85%; background-color: greenyellow;}
+
+  footer{
+      font-size: 18px;
+      text-align: center;
+      background-color: rgb(15, 15, 15);
+  }
