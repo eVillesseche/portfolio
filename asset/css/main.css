@@ -119,9 +119,15 @@
 
 #Projet {
     text-align: center;
-    grid-area: formation;
+    grid-template-areas: "honey  rov";
     display: block;
     margin-bottom: 15px;
+}
+#BeeHoney{
+    grid-area: honey;
+}
+#Rov{
+    grid-area: rov;
 }
 
 #Projet a {
@@ -158,10 +164,6 @@
     background-image: url(../img/space_2.png);
 }
 
-.Projets
-{
-    columns: 2;
-}
 
 #Projet h2 {
     text-align: center;
